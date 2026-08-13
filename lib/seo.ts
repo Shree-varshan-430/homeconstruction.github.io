@@ -1,10 +1,10 @@
 export const siteConfig = {
   title: "GK Home Construction Editorial - Bangalore's Premium Construction Guide",
   description: "Expert editorial guides on home construction, interior design, waterproofing, floor plans, and renovations in Bangalore. Learn Vastu guidelines, material checklists, and cost estimators.",
-  siteUrl: "https://Shree-varshan-430.github.io/homeconstruction.github.io",
+  siteUrl: "https://shree-varshan-430.github.io/homeconstruction.github.io",
   companyUrl: "https://gkhomeconstruction.com",
   author: "GK Home Construction Editorial",
-  logoUrl: "https://Shree-varshan-430.github.io/homeconstruction.github.io/images/logo.png"
+  logoUrl: "https://shree-varshan-430.github.io/homeconstruction.github.io/images/logo.png"
 };
 
 // Generates correct Canonical URLs automatically
