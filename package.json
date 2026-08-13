@@ -1,0 +1,34 @@
+{
+  "name": "homeconstruction-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "npx tsx scripts/generate-posts.ts && npx tsx scripts/generate-rss.ts"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "gray-matter": "^4.0.3",
+    "next-mdx-remote": "^5.0.0",
+    "lucide-react": "^0.468.0",
+    "rss": "^1.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "@types/rss": "^0.0.32",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.1.0",
+    "tsx": "^4.19.2"
+  }
+}

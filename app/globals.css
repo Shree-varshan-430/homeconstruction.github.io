@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FAF8F5;
+  --color-card: #FFFFFF;
+  --color-primary: #1F2937;
+  --color-secondary: #6B7280;
+  --color-accent: #8B5E3C;
+  --color-gold: #C8A97E;
+  --color-border-custom: #E7E5E4;
+
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.25;
+  }
+}
+
+/* Premium Typography classes for MDX */
+.prose-editorial {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-primary);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.prose-editorial p {
+  margin-bottom: 1.75rem;
+  font-family: var(--font-sans);
+}
+
+.prose-editorial h1 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.prose-editorial h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-border-custom);
+  padding-bottom: 0.5rem;
+}
+
+.prose-editorial h3 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.prose-editorial ul {
+  list-style-type: square;
+  padding-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.prose-editorial ol {
+  list-style-type: decimal;
+  padding-left: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.prose-editorial li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-editorial blockquote {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  border-left: 4px solid var(--color-accent);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  color: var(--color-accent);
+}
+
+.prose-editorial table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.5rem 0;
+  font-size: 0.95rem;
+}
+
+.prose-editorial th {
+  background-color: rgba(139, 94, 60, 0.05);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--color-border-custom);
+}
+
+.prose-editorial td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border-custom);
+}
+
+.prose-editorial a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.prose-editorial a:hover {
+  color: var(--color-gold);
+}
+
+.prose-editorial img {
+  border-radius: 4px;
+  margin: 2.5rem 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Callout styling inside markdown */
+.callout {
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  border-left: 4px solid var(--color-gold);
+  border-radius: 0 4px 4px 0;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-custom);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}

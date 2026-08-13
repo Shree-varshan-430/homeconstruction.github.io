@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# next.js local builds
+/.next/
+/out/
+/build
+
+# testing
+/coverage
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables
+.env*.local
+
+# operating system files
+.DS_Store
+Thumbs.db
