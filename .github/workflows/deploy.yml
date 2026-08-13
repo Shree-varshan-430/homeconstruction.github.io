@@ -28,6 +28,9 @@ jobs:
       - name: Run Build
         run: npm run build
 
+      - name: Add .nojekyll to disable Jekyll processing
+        run: touch out/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: jamesives/github-pages-deploy-action@v4
         with:
