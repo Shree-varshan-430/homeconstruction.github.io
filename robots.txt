@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://Shree-varshan-430.github.io/homeconstruction.github.io/sitemap.xml
