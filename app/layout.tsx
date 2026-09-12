@@ -92,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
       <body className="flex flex-col min-h-screen bg-bg text-primary">
         <ReadingProgress />
         <Navbar />
